@@ -60,6 +60,7 @@ end
       song_list << song 
     end 
   end
-  song_list = song_list 
+  song_list = song_list.sort_by{|song| song.name}
+  song_list
   end
 end
