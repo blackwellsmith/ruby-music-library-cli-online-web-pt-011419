@@ -63,5 +63,8 @@ end
   song_list = song_list.sort_by{|song| song.name}
   song_list.each {|song| puts "#{song_list.index(song) + 1}. #{song.name} - #{song.genre.name}" }
   end
+  def list_songs_by_genre
+    
+  end
 end
 
