@@ -81,8 +81,8 @@ end
     input = gets.chomp.to_i
    if Song.all.length + 1 >= input && input > 0
      song = Song.all.sort_by! { |songA| songA.name}[input - 1]
-     puts "Playing #{song.name} by #{song.artist.name}"
-  end
-end
+     puts "Playing #{song.name} by #{song.artist.name}" if song
+   end
+ end
 end
 
