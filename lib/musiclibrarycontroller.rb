@@ -82,7 +82,7 @@ end
    if Song.all.length + 1 >= input && input > 0
      song = Song.all.sort_by! { |songA| songA.name}[input - 1]
      puts "Playing #{song.name} by #{song.artist.name}" if song
-   end
- end
+    end
+  end
 end
 
