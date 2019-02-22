@@ -66,7 +66,11 @@ end
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets.chomp
-    genre_list = []
+    songs_genre = []
+    Song.all.each do |song|
+      if song.genre.name == input
+        songs_genre << input
+  end
     
   end
 end
