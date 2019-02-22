@@ -72,7 +72,8 @@ end
         songs_genre << input
       end
     end
-    
+  songs_genre = songs_genre.sort_by{|song| song.genre.name}
+  songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.name} - #{song.genre.name}" }
       
     
   end
