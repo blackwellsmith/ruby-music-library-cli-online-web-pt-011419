@@ -76,7 +76,8 @@ end
   songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.artist.name} - #{song.name}" }
   end
   def play_song
-    puts 
+    puts "Which song number would you like to play?"
+    input = gets.chomp
   end
 end
 
