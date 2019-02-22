@@ -60,5 +60,6 @@ end
       song_list << song 
     end 
   end
+  song_list = song_list 
   end
 end
