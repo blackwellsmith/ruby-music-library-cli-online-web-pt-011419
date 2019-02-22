@@ -34,7 +34,7 @@ end
      puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
    end
 end
-  Def list_artists
+  def list_artists
   list = Artist.all.sort_by! do |artist| 
      artist.name
    end
