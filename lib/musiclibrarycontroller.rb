@@ -39,7 +39,7 @@ end
    #  artist.name
    #end
    #list.each.with_index(1) do |artist, i|
-    # puts "#{i}. #{artist.name} - #{artist.song.name} - #{artist.genre.name}"
+    # puts "#{i}. #{artist.name}"
   # end
   end
 end
