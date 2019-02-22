@@ -55,7 +55,7 @@ end
     puts "Please enter the name of an artist:"
     input = gets.chomp
   
-    input_artist = Artist.all.detect {|artist| artist == input}
+    input_artist = Artist.all.detect {|artist| if artist == input}
     binding.pry
     #input_artist.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
   end
