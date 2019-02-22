@@ -73,7 +73,7 @@ end
       end
     end
   songs_genre = songs_genre.sort_by{|song| song.genre}
-  songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.artist.name} - #{song.genre.name}" }
+  songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.artist.name} - #{song.name}" }
       
     
   end
