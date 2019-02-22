@@ -23,7 +23,8 @@ class MusicLibraryController
   i += 1
   if i == 4 || input == "exit"
     break
-  elsif 
+  elsif input == 'list song'
+    list_songs
   end
  end
 end
