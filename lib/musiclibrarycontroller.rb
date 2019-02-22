@@ -35,5 +35,11 @@ end
    end
   end
   Def list_artist
-  
+  list = Artist.all.sort_by! do |artist| 
+     artist.name
+   end
+   list.each.with_index(1) do |song, i|
+     puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+   end
+  end
 end
