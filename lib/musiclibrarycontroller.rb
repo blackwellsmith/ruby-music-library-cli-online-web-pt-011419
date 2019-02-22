@@ -53,5 +53,6 @@ end
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.chomp
+    input_artist = Artist.all.detect {|artist| artist == input}
   end
 end
