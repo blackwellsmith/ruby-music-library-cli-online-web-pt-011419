@@ -69,7 +69,7 @@ end
     songs_genre = []
     Song.all.each do |song|
       if song.genre.name == input
-        songs_genre << input
+        songs_genre << song
       end
     end
   songs_genre = songs_genre.sort_by{|song| song.genre}
