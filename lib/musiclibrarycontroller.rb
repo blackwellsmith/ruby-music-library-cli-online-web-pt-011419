@@ -22,7 +22,8 @@ class MusicLibraryController
    input = gets.strip
   i += 1
   if i == 4 || input == "exit"
-    break       
+    break
+  elsif 
   end
  end
 end
