@@ -56,6 +56,9 @@ end
     input = gets.chomp
     song_list = []
     Song.all.each do |song|
-    if song
+    if song.artist.name == input
+      song_list << song 
+    end 
+  end
   end
 end
