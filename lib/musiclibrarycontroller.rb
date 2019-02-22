@@ -61,6 +61,6 @@ end
     end 
   end
   song_list = song_list.sort_by{|song| song.name}
-  song_list.each {|song| puts "#{song_list.index() + 1}
+  song_list.each {|song| puts "#{song_list.index(song) + 1}. #{song.name} - #{song.genre.name}" }
   end
 end
