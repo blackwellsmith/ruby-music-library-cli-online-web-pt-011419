@@ -54,6 +54,7 @@ end
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.chomp
+  end
     input_artist = Artist.all.detect {|artist| artist == input}
     input_artist.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
   end
