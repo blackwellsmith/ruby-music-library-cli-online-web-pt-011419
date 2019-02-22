@@ -64,7 +64,9 @@ end
   song_list.each {|song| puts "#{song_list.index(song) + 1}. #{song.name} - #{song.genre.name}" }
   end
   def list_songs_by_genre
-    puts 
+    puts "Please enter the name of a genre:"
+    input = gets.chomp
+    genre_list = []
     
   end
 end
