@@ -50,5 +50,6 @@ end
      puts "#{i}. #{genre.name}"
    end
   end
-  def list_
+  def list_songs_by_artist
+  end
 end
