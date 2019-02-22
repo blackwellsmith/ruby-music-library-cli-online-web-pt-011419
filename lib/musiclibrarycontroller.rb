@@ -76,6 +76,7 @@ end
   songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.artist.name} - #{song.name}" }
   end
   def play_song
+    puts 
   end
 end
 
