@@ -24,6 +24,8 @@ class MusicLibraryController
     break
   elsif input == "list songs"
     list_songs
+    elsif input == "list artist"
+    list_artist
   end
  end
 end
