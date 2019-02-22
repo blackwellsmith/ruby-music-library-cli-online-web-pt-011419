@@ -34,12 +34,12 @@ end
      puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
    end
   end
-  Def list_artist
+  Def list_artists
   list = Artist.all.sort_by! do |artist| 
      artist.name
    end
-   list.each.with_index(1) do |song, i|
-     puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
+   list.each.with_index(1) do |artist, i|
+     puts "#{i}. #{artist.name} - #{artist.song.name} - #{artist.genre.name}"
    end
   end
 end
