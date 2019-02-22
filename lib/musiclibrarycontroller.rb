@@ -54,9 +54,7 @@ end
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.chomp
-  
-    if Artist.all.include? (input)
-    binding.pry
-    #input_artist.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
+    song_list = []
+    if 
   end
 end
