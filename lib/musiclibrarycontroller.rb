@@ -79,7 +79,7 @@ end
   def play_song
     puts "Which song number would you like to play?"
     input = gets.chomp.to_i
-   if Song.all.length + 1 >= input
+   if Song.all.length + 1 >= input && input > 0
    binding.pry
     end
   end
