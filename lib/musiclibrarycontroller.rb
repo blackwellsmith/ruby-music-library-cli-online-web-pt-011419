@@ -32,15 +32,15 @@ end
    end
    list.each.with_index(1) do |song, i|
      puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
-   end
+  end
 end
   def list_artists
   list = Artist.all.sort_by! do |artist| 
     artist.name
-   end
-   list.each.with_index(1) do |artist, i|
+    end
+    list.each.with_index(1) do |artist, i|
      puts "#{i}. #{artist.name}"
-   end
+    end
   end
   def list_genres
   list = Genre.all.sort_by! do |genre| 
@@ -48,8 +48,8 @@ end
    end
    list.each.with_index(1) do |genre, i|
      puts "#{i}. #{genre.name}"
+    end
   end
-   end
 
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
@@ -74,8 +74,8 @@ end
     end
   songs_genre = songs_genre.sort_by{|song| song.genre}
   songs_genre.each {|song| puts "#{songs_genre.index(song) + 1}. #{song.artist.name} - #{song.name}" }
-      
-    
+  end
+  def play_song
   end
 end
 
