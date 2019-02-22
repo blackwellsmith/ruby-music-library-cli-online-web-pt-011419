@@ -33,7 +33,7 @@ end
    list.each.with_index(1) do |song, i|
      puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
    end
-end
+
   def list_artists
   list = Artist.all.sort_by! do |artist| 
      artist.name
