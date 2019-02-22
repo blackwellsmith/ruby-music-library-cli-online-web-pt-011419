@@ -71,6 +71,7 @@ end
       if song.genre.name == input
         songs_genre << input
       end
+    end
       
     
   end
