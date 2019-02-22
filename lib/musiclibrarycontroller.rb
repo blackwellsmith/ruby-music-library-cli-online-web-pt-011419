@@ -40,4 +40,5 @@ end
    end
    # sorts and numbers song list alphabetical
   end
+  Def list_artist
 end
