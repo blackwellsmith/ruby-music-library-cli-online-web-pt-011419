@@ -50,4 +50,5 @@ end
      puts "#{i}. #{genre.name}"
    end
   end
+  def list_
 end
