@@ -80,7 +80,7 @@ end
     puts "Which song number would you like to play?"
     input = gets.chomp
     play_that_song = self.list_songs.include?(input)
-    #binding.pry
+    binding.pry
   end
 end
 
