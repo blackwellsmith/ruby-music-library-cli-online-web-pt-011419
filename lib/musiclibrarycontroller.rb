@@ -44,7 +44,7 @@ end
   end
   def list_genres
   list = Genre.all.sort_by! do |genre| 
-    genre.name.uniq
+    genre.name
    end
    list.each.with_index(1) do |genre, i|
      puts "#{i}. #{genre.name}"
