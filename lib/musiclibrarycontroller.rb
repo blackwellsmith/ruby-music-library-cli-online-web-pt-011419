@@ -56,6 +56,7 @@ end
     input = gets.chomp
   
     input_artist = Artist.all.detect {|artist| artist == input}
+    binding.pry
     #input_artist.each.with_index(1) {|song, i| puts "#{i}. #{song.name}"}
   end
 end
