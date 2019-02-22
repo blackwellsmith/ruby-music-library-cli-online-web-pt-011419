@@ -38,8 +38,8 @@ end
   list = Artist.all.sort_by! do |artist| 
     artist.name
    end
-   #list.each.with_index(1) do |artist, i|
-    # puts "#{i}. #{artist.name}"
-  # end
+   list.each.with_index(1) do |artist, i|
+     puts "#{i}. #{artist.name}"
+   end
   end
 end
