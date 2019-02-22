@@ -55,6 +55,7 @@ end
     puts "Please enter the name of an artist:"
     input = gets.chomp
     song_list = []
-    if 
+    Song.all.each do |song|
+    if song
   end
 end
