@@ -70,7 +70,8 @@ end
     Song.all.each do |song|
       if song.genre.name == input
         songs_genre << input
-  end
+      end
+      
     
   end
 end
