@@ -81,7 +81,7 @@ end
     input = gets.chomp.to_i
    if Song.all.length + 1 >= input && input > 0
      song = Song.all.sort_by! { |songA| songA.name}[input - 1]
-     binding.pry
+     puts 
   end
 end
 end
